@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>home-assistant</Name>
+    <Repository>tobbenb/playground:hass-amd64</Repository>
+    <Registry>https://hub.docker.com/r/tobbenb/playground/</Registry>
+    <DonateText>Donations</DonateText>
+    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://linuxserver.io</Support>
+    <Project>https://www.home-assistant.io/</Project>
+    <Overview>Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server. /Overview>
+    <Category>Tools:</Category>
+    <WebUI>http://[IP]:[PORT:8123]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/tobbenb/templates/main/home-assistant.xml</TemplateURL>
+    <Icon>https://www.home-assistant.io/images/home-assistant-logo.svg</Icon>
+    <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="WebUI" Target="8123" Default="8123" Mode="tcp" Description="Container Port: 8123" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="false" Mask="false"/>
+</Container>
